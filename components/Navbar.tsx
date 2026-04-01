@@ -3,28 +3,15 @@
 export default function Navbar() {
   return (
     <div className="fixed top-0 w-full flex justify-between px-8 py-4 backdrop-blur bg-black/40 z-50">
-      
       <h1 className="font-semibold">RK</h1>
 
       <div className="hidden md:flex gap-6 text-sm text-gray-300">
-        <a href="#experience" className="hover:text-white transition">
-          Experience
-        </a>
-        <a href="#skills" className="hover:text-white transition">
-          Skills
-        </a>
-        <a href="#projects" className="hover:text-white transition">
-          Projects
-        </a>
-        <a href="#system-design" className="hover:text-white transition">
-          Design
-        </a>
-        <a href="#awards" className="hover:text-white transition">
-          Awards
-        </a>
-        <a href="#contact" className="hover:text-white transition">
-          Contact
-        </a>
+        <a href="#experience" className="hover:text-white">Experience</a>
+        <a href="#skills" className="hover:text-white">Skills</a>
+        <a href="#projects" className="hover:text-white">Projects</a>
+        <a href="#system-design" className="hover:text-white">Design</a>
+        <a href="#awards" className="hover:text-white">Awards</a>
+        <a href="#contact" className="hover:text-white">Contact</a>
       </div>
 
       <a

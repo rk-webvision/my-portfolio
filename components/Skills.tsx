@@ -3,16 +3,10 @@ export default function Skills() {
     {
       title: "Core Expertise",
       highlight: true,
-      items: [
-        "Angular (v8–v19)",
-        "TypeScript",
-        "JavaScript (ES6+)",
-        "RxJS",
-        "NgRx",
-      ],
+      items: ["Angular", "TypeScript", "JavaScript", "RxJS", "NgRx"],
     },
     {
-      title: "Backend & APIs",
+      title: "Backend",
       items: ["Node.js", "NestJS", "Spring Boot", "REST APIs"],
     },
     {
@@ -20,30 +14,18 @@ export default function Skills() {
       items: ["MySQL", "MongoDB"],
     },
     {
-      title: "Architecture & Practices",
-      items: [
-        "System Design",
-        "Microservices",
-        "Performance Optimization",
-        "Lazy Loading",
-        "OnPush Change Detection",
-      ],
-    },
-    {
-      title: "Tools",
-      items: ["Git", "Docker", "CI/CD", "JIRA", "Swagger"],
+      title: "Architecture",
+      items: ["System Design", "Microservices", "Performance Optimization"],
     },
   ];
 
   return (
     <section id="skills" className="scroll-mt-24 max-w-5xl mx-auto py-20 px-6">
-      <h2 className="text-4xl font-bold mb-12 text-center">
-        Technologies & Skills
-      </h2>
+      <h2 className="text-4xl font-bold mb-12 text-center">Technologies & Skills</h2>
 
       <div className="space-y-10">
-        {skillGroups.map((group, i) => (
-          <div key={i}>
+        {skillGroups.map((group) => (
+          <div key={group.title}>
             <h3 className="text-xl font-semibold mb-4 text-gray-300">
               {group.title}
             </h3>
@@ -52,11 +34,10 @@ export default function Skills() {
               {group.items.map((item) => (
                 <span
                   key={item}
-                  className={`px-4 py-2 rounded-full text-sm transition
-                  ${
+                  className={`px-4 py-2 rounded-full text-sm ${
                     group.highlight
-                      ? "bg-white text-black font-medium"
-                      : "border border-gray-700 text-gray-300 hover:bg-white hover:text-black"
+                      ? "bg-white text-black"
+                      : "border border-gray-700 hover:bg-white hover:text-black"
                   }`}
                 >
                   {item}

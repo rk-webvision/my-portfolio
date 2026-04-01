@@ -7,20 +7,24 @@ export default function Contact() {
         <p>Email: kotgyaleravikiran@gmail.com</p>
         <p>Phone: +91 7276278721</p>
 
-        <a
-          href="https://linkedin.com/in/ravikiran-kotgyale"
-          target="_blank"
-          className="block hover:text-white transition"
-        >
-          LinkedIn Profile
-        </a>
+        <p><a href="https://linkedin.com/in/ravikiran-kotgyale" target="_blank">
+          LinkedIn
+        </a></p>
 
+        <p>
+          <a href="https://github.com/rk-webvision" target="_blank">
+          GitHub
+        </a>
+        </p>
+      </div>
+
+      {/* CTA */}
+      <div className="mt-10">
         <a
-          href="https://github.com/rk-webvision"
-          target="_blank"
-          className="block hover:text-white transition"
+          href="mailto:kotgyaleravikiran@gmail.com"
+          className="px-6 py-3 bg-white text-black rounded-xl"
         >
-          GitHub Profile
+          Contact Me
         </a>
       </div>
     </section>
