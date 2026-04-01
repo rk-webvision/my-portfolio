@@ -36,7 +36,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="max-w-5xl mx-auto py-20 px-6">
+    <section id="skills" className="scroll-mt-24 max-w-5xl mx-auto py-20 px-6">
       <h2 className="text-4xl font-bold mb-12 text-center">
         Technologies & Skills
       </h2>

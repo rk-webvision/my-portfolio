@@ -8,20 +8,27 @@ import Projects from "@/components/Projects";
 import Awards from "@/components/Awards";
 import Contact from "@/components/Contact";
 import SystemDesign from "@/components/SystemDesign";
+import FadeIn from "@/components/FadeIn";
+import PageWrapper from "@/components/PageWrapper";
 
 export default function Home() {
   return (
+    <PageWrapper>
     <>
       <Navbar />
       <Hero />
       <About />
-      <Experience />
-      <Skills />
+      <FadeIn>
+        <Experience />
+      </FadeIn>
+      <FadeIn><Skills /></FadeIn>
+
       <Strengths />
       <SystemDesign />
-      <Projects />
-      <Awards />
+      <FadeIn><Projects /></FadeIn>
+      <FadeIn><Awards /></FadeIn>
       <Contact />
     </>
+    </PageWrapper>
   );
 }
