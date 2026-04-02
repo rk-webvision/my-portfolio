@@ -8,6 +8,7 @@ import Projects from "@/components/Projects";
 import Awards from "@/components/Awards";
 import Contact from "@/components/Contact";
 import PageWrapper from "@/components/PageWrapper";
+import VibeCode from "@/components/VibeCode";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <Strengths />
       <SystemDesign />
       <Projects />
+      <VibeCode />
       <Awards />
 
       {/* Currently Working */}

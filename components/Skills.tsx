@@ -3,7 +3,7 @@ export default function Skills() {
     {
       title: "Core Expertise",
       highlight: true,
-      items: ["Angular", "TypeScript", "JavaScript", "RxJS", "NgRx"],
+      items: ["Angular", "TypeScript", "JavaScript", "RxJS", "NgRx", "React"],
     },
     {
       title: "Backend",

@@ -1,6 +1,7 @@
 import { projects } from "@/data/projects";
 import ArchitectureDiagram from "@/components/ArchitectureDiagram";
 import PageWrapper from "@/components/PageWrapper";
+import Link from "next/link";
 
 export default async function ProjectPage({
   params,
@@ -22,6 +23,15 @@ export default async function ProjectPage({
   return (
   <PageWrapper>
     <div className="max-w-4xl mx-auto py-20 px-6">
+      {/* Close Button */}
+      <div className="flex justify-end mb-6">
+        <Link
+          href="/"
+          className="text-xl border px-3 py-1 rounded hover:bg-white hover:text-black transition"
+        >
+          ✕
+        </Link>
+      </div>
       <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
 
       <p className="text-gray-400 mb-6">{project.description}</p>
