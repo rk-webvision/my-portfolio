@@ -23,7 +23,7 @@ export default function Hero() {
           View Work
         </a>
 
-        <a href="/resume.pdf" download className="px-6 py-3 rounded-xl border border-gray-700 hover:bg-white hover:text-black transition">
+        <a href="/Kotgyale_Ravikiran_Vijay.pdf" download className="px-6 py-3 rounded-xl border border-gray-700 hover:bg-white hover:text-black transition">
           Download Resume
         </a>
       </div>
